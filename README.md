@@ -1,0 +1,2 @@
+# komponen
+komponen saya
