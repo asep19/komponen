@@ -1,0 +1,231 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/all.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- header -->
+    <header class="section-header menu"> 
+        <section class="header-main border-bottom">
+            <div class="container-fluid">
+                <div class="col-lg-2 col-md-3 col-6">
+                    <a href="" class="brand-wrap" style="margin-left: 50px;">
+                        <img src="img/Prefered Logo MyHijab Butik Store.png" alt="logo myhijab" height="60">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- section alamat-->
+    <section class="section-content padding-y">
+        <div class="container"> 
+            <div class="card">
+                <header class="card-header">
+                    <h5 class="font-weight-normal  ap"><i class="fas fa-map-marker-alt"></i>&nbsp;Alamat Pengiriman</h5>
+                    <strong class="text-justify  ">John Doe &nbsp; (+62) 82190022101</strong> 
+                    <span class="ml-3">Jl.Pahlawan No.12 RT 1/4 Ds Cileunyi Kulon, KAB. BANDUNG - CILEUNYI, JAWA BARAT, ID 40611</span>
+                    <span><a href="">Ubah</a></span>
+                </header>  
+            </div> 
+        </div>  
+    </section>
+
+    <!-- produk dipesan -->
+    <section>
+        <div class="container">
+            <h5 class="font-weight-normal">Produk Dipesan</h5>
+            <div class="card">
+                <div class="table-responsive">
+                
+                <table class="table table-borderless table-shopping-cart">
+                <thead class="text-muted">
+                <tr class="small text-uppercase">
+                  <th scope="col" width="300">Produk</th>
+                  <th scope="col" width="120">Jumlah</th>
+                  <th scope="col" width="120">Harga Satuan</th>
+                  <th scope="col" width="120">Subtotal Produk</th> 
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <figure class="itemside align-items-center">
+                            <div class="aside"><img src="img/produk/photo6149721164860205439.jpg" class="img-sm"></div>
+                            <figcaption class="info">
+                                <a href="#" class="title text-dark">Hijab Instan Segi Empat</a>
+                                <p class="text-muted small">Size: M <br> Warna: Maroon</p>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td class="text-center">
+                        2
+                    </td>
+                    <td>
+                        <div class="price-wrap">
+                            <var class="price font-weight-normal">Rp 40.000</var> 
+                        </div> <!-- price-wrap .// -->
+                    </td> 
+                    <td>
+                        <div class="price-wrap">
+                            <var class="price font-weight-normal">Rp 80.000</var> 
+                        </div> <!-- price-wrap .// -->
+                    </td> 
+                </tr> 
+                <tr>
+                    <td colspan="3"><small class="float-right">Total Pesanan (1 Produk)</small></td>
+                    <td>
+                        <div class="price-wrap">
+                            <h5 class="price font-weight-normal text-warning">Rp 80.000</h5> 
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+                
+                </div> <!-- table-responsive.// -->
+                 
+                
+            </div>
+        </div> 
+    </section>
+
+    <!-- kurir -->
+    <section>
+        <div class="container">
+            <h5 class="font-weight-normal">Kurir</h5>
+            <div class="card"> 
+                <label>Kabupaten Tujuan</label><br> 
+  <select id="kabupaten" name="kabupaten"></select><br><br> 
+
+  <label>Kurir</label><br> 
+  <select id="kurir" name="kurir"> 
+  <option value="jne">JNE</option> 
+  <option value="tiki">TIKI</option> 
+  </select><br><br> 
+
+  <label>Berat (gram)</label><br> 
+  <input id="berat" type="text" name="berat" value="500" /> 
+  <br><br> 
+
+  <input id="cek" type="submit" value="Cek"/> 
+
+  <div id="ongkir"></div>
+            </div>
+        </div> 
+    </section>
+
+    <!-- metode pembayaran -->
+    <section class="mt-2">
+        <div class="container">
+            <h5 class="font-weight-normal">Metode Pembayaran</h5>
+            <div class="card"> 
+                <div class="btn-toolbar btn-group-sm btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-light mr-1">
+                        <input type="radio" name="radio_color">Grey
+                    </label>
+                    <label class="btn btn-light mr-1 active">
+                        <input type="radio" name="radio_color">Navy
+                    </label>
+                    <label class="btn btn-light mr-1">
+                        <input type="radio" name="radio_color" checked="">Maroon
+                    </label>
+                    <label class="btn btn-light mr-1">
+                        <input type="radio" name="radio_color">Pink
+                    </label>
+                    <label class="btn btn-light mr-1">
+                        <input type="radio" name="radio_color">Blue
+                    </label>
+                    <label class="btn btn-light mr-1">
+                        <input type="radio" name="radio_color">Black
+                    </label>
+                    <label class="btn btn-light mr-1 mt-1">
+                        <input type="radio" name="radio_color">White
+                    </label>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="section-content padding-y">
+        <div class="container">
+        
+        <header class="section-heading">
+            <h2 class="section-title">Starter page </h2>
+        </header><!-- sect-heading -->
+        
+        <article>
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        <br><br><br><br><br><br><br><br><br>
+        
+        </article>
+        
+        </div> <!-- container .//  -->
+    </section>
+    <!-- footer -->
+    <footer class="section-footer border-top padding-y">
+        <div class="container">
+            <p class="float-md-right"> 
+                © Copyright 2019 All rights reserved
+            </p>
+            <p>
+                <a href="#">Terms and conditions</a>
+            </p>
+        </div><!-- //container -->
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
