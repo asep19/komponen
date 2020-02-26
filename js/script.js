@@ -53,5 +53,58 @@ $(document).ready(function() {
 }); 
 // jquery end
 
+// link image thumbnail
+$(document).ready(function () {
+    $("#img_produk").ezPlus({
+        gallery: 'img_thumbs',
+        cursor: 'pointer',
+        galleryActiveClass: "active",
+        imageCrossfade: true,
+        loadingIcon: "images/spinner.gif"
+    });
+
+    $("#img_produk").bind("click", function (e) {
+        var ez = $('#img_produk').data('ezPlus');
+        ez.closeAll(); //NEW: This function force hides the lens, tint and window
+        $.fancybox(ez.getGalleryList());
+        return false;
+    });
+
+});
+
+// buat halaman admin
+jQuery(function ($) {
+
+    $(".sidebar-dropdown > a").click(function() {
+  $(".sidebar-submenu").slideUp(200);
+  if (
+    $(this)
+      .parent()
+      .hasClass("active")
+  ) {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .parent()
+      .removeClass("active");
+  } else {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .next(".sidebar-submenu")
+      .slideDown(200);
+    $(this)
+      .parent()
+      .addClass("active");
+  }
+});
+
+$("#close-sidebar").click(function() {
+  $(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+  $(".page-wrapper").addClass("toggled");
+});
 
 
+   
+   
+});
