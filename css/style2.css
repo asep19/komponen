@@ -386,4 +386,37 @@ mark {
   margin-bottom: 7px;
   display: inline-block; }
 
+  /* carousel syle */
+  .carousel .carousel-control {
+    height: 44px;
+    width: 40px;
+    background:  rgb(212, 3, 94);	
+      margin: auto 0;
+      border-radius: 4px;
+    opacity: 0.2;
+  }
+  .carousel .carousel-control:hover {
+    background:  rgb(212, 3, 94);
+    opacity: 1;
+  }
+  .carousel .carousel-control i {
+      font-size: 36px;
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      margin: -19px 0 0 0;
+      z-index: 5;
+      left: 0;
+      right: 0;
+      color: #fff;
+    text-shadow: none;
+      font-weight: bold;
+  } 
+  .carousel .carousel-control.left i {
+    margin-left: -2px;
+  }
+  .carousel .carousel-control.right i {
+    margin-right: -4px;
+  }
+
 /*# sourceMappingURL=style.css.map */

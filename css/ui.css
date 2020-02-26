@@ -1118,8 +1118,9 @@ a[class*='card'] {
     height: 450px;
     width: auto;
     display: inline-block;
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in; }
+    /* cursor: -webkit-zoom-in;
+    cursor: zoom-in; */
+   }
 .gallery-wrap .thumbs-wrap {
   text-align: center;
   margin-bottom: 20px; }
@@ -1137,13 +1138,15 @@ a[class*='card'] {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 4px;
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in; }
+    /* cursor: -webkit-zoom-in;
+    cursor: zoom-in;  */
+  }
     .gallery-wrap .thumbs-wrap img:hover {
       -webkit-filter: brightness(1.1);
               filter: brightness(1.1);
-      cursor: -webkit-zoom-in;
-      cursor: zoom-in; }
+      /* cursor: -webkit-zoom-in;
+      cursor: zoom-in;  */
+    }
 
 .item-option-select {
   margin-bottom: 1rem;
